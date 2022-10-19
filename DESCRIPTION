@@ -1,0 +1,25 @@
+Package: RCLASSPACK
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person(First = "Armel", 
+           Last = "Setubi", 
+           Email = "ramaarmelo@outlook.com"  
+           role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: This is a r package containing a function that helps converting data longitude and
+            latitude from from the decimal minutes into decimal degrees. An example of the function 
+            can be specified as homework_function(). The package also contains an example of dataset 
+            on which the function can be tested.  				    
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Depends: 
+    R (>= 2.10)
+LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
