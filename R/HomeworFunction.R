@@ -3,7 +3,7 @@
 #' @param Longitude The coordinate longitude to transform
 #' @param Latitude The coordinate Latitude to transform
 #' @param ... Provides opportunity use different argument to affect Longitude and Latitude
-#' @keywords Longitude Latitude Transformation
+#' @keywords Longitude Latitude Transformation decimal degree minute
 #' @export
 #' @examples 
 #' homework_function()
