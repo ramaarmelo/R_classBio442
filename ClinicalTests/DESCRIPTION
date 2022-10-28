@@ -1,0 +1,19 @@
+Package: ClinicalTests
+Title: What the Package Does (Computes clinical tests characteristic values, also provides scatter plots and bar plots)
+Version: 0.0.0.9000
+Authors@R: 
+    person("Armel", "Setubi", , "ramaarmelo@outlook.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: The package provides 3 functions. The first function (function1)computes simultaneously clinical and epidemiological characteristics including tests' sensitivity, specificity, positive and negative predictive values, incidence rate, and prevalence. Function2 outputs a panel that helps to have a glance (scatter plots)at the relation between CD4 count and viral load in groups of patients on different drug types. Function3 also outputs a panel with free scale plots (scatter plots) evaluating the same relation, with the corresponding box plots. 
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Depends: 
+    R (>= 2.10)
+LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

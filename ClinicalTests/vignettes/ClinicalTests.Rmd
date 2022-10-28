@@ -1,0 +1,61 @@
+---
+title: "ClinicalTests"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{ClinicalTests}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+**A Package Description**
+
+The package **ClinicalTests** contains 3 functions: Disea_description(), that can be use in different studies including clinical and epidemiological studies.
+
+```{r setup}
+library(ClinicalTests)
+```
+**function1** 
+
+**Disea_description()** provides the ability to compute valuable lab test characteristics such as sensitivity, specificity, positive predictive value and negative predictive values at once. In addition the function outputs indicators such as disease prevalence and incidence rate. An example of working function is Disea_description(DiseaseData)
+
+```{First funtion}
+Disea_description(DiseaseData) 
+```
+The **DiseaseData** data frame is example of data set that could be used to test this function. The function generates test characteristics based on values indicating true positive, false positive, true
+negative, and false negative. Incidence is generated based on the number of new infection over a period of time and prevalence is generated based on the total number of people have the condition in the population. 
+
+```{Example of dataset}
+Example of data set: DiseaseData
+```
+
+**function2**
+
+**MedSample()** generate a panel of figures (scatter plots) for a quick observation of the trend between two related variables distributed in more than one categories. The example in this package looks at HIV infected patients on 4 different types of anti-retroviral treatments, and the relation between the patient's CD4 counts and the viral load. The panels here are based on the same scale. an example of function is MedSample(drugLine). For the function to work properly, library(ggplot2) and library(ggpubr) should be installed. This function uses as imput a dataframe.
+```{Second function}
+MedSample(drugLine)
+```
+
+The **drugLine** data frame is an example of data set that could be used to test the function and visualize the output.
+
+```{dataset}
+An example of dataset: drugLine
+```
+
+
+**Function3**
+
+**DrugsVisual()** generate a panel of figures including scatter plots in free scales and the corresponding box plot. this helps a quick visualization of the data and provides a trend for the relation between between the patient's CD4 counts and the viral load in the different groups of medicines. For the function to work properly, library(ggplot2) and library(ggpubr) should be installed. This function uses an imput dataframe. 
+```{function3}
+DrugsVisual(drugLine)
+```
+
+The **drugLine** data frame is an example of data set that could be used to test function3 and visualize the output.
+```{data}
+drugLine is an example of dataset that can be used 
+```
