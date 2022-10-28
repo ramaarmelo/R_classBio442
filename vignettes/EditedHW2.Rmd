@@ -1,0 +1,25 @@
+---
+title: "EditedHW2"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{EditedHW2}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+**homework_function()**
+
+This function **homework_function()** is useful in transforming coordinates longitude and latitude from decimal minutes to decimal degree. This function use arguments including longitude, latitude, and other argument that can work with the function. An example of this function is **homework_function(Longitude, Latitude, mean = FALSE)** To install and the function, use the command install("EditedHW2") and library("EditedHW2")
+```{r setup}
+library(EditedHW2)
+```
+
+**Data**
+
+The data frame gw is an example of data that can be use with this function
